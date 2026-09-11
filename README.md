@@ -8,3 +8,15 @@ return was +0.0136% before fees, falling to +0.0015% in the latest 30 days.
 python3 -m unittest discover -s tests -v
 python3 ema_next_candle_research.py
 ```
+
+## Data
+
+`data/` is git-ignored and comes from the private `btc-5m-data` repository. Unpack it with:
+
+```bash
+python3 scripts/fetch_data.py
+```
+
+The script clones or refreshes `btc-5m-data` at `~/.cache/btc-5m-data`, verifies checksums, and
+skips files that already exist. The 11GB per-market Polymarket tick cache is not versioned;
+rebuild it with the `--download` flags of the research scripts.
