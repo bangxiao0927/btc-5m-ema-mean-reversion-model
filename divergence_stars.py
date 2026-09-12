@@ -16,7 +16,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Sequence
 
-from btc5m_strategy import Candle
+from candles import Candle
 
 BEARISH_LABELS = {1: "背离1星", 2: "背离2星", 3: "背离3星"}
 BULLISH_LABELS = {1: "背离1星", 2: "背离2星", 3: "背离3星"}

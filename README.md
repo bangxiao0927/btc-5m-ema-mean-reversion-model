@@ -18,5 +18,4 @@ python3 scripts/fetch_data.py
 ```
 
 The script clones or refreshes `btc-5m-data` at `~/.cache/btc-5m-data`, verifies checksums, and
-skips files that already exist. The 11GB per-market Polymarket tick cache is not versioned;
-rebuild it with the `--download` flags of the research scripts.
+skips files that already exist.

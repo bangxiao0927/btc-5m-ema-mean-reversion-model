@@ -15,8 +15,8 @@ from pathlib import Path
 from statistics import fmean
 from typing import Sequence
 
-from backtest import load_candles_csv
-from btc5m_strategy import Candle
+from candles import load_candles_csv
+from candles import Candle
 from divergence_stars import ema
 
 PERIODS = (5, 8, 13, 26)

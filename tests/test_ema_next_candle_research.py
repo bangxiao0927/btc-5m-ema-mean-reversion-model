@@ -2,7 +2,7 @@
 
 import unittest
 
-from btc5m_strategy import Candle
+from candles import Candle
 from ema_next_candle_research import PERIODS, QUANTILES, atr14, research
 
 
